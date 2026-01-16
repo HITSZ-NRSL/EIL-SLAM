@@ -1,4 +1,4 @@
-# EIL-SLAM:Depth Enhanced Edge-based Infrared-LiDAR SLAM
+# [JFR 2022] EIL-SLAM:Depth Enhanced Edge-based Infrared-LiDAR SLAM
 
 This repository contains code for a Depth enhanced edge-based Infrared-LiDAR SLAM system for ROS. It integrates the open source works of [rebvo](https://github.com/JuanTarrio/rebvo) and [Lego-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) to generate this work.The system takes in point cloud from a Velodyne VLP-16 Lidar and thermal infrared images as inputs. It output 6D pose estimation in all-day.
 
