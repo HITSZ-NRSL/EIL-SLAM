@@ -1,0 +1,13 @@
+<launch>
+    <param name="/use_sim_time" value="true" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rebvo)/rviz_cfg/test.rviz" />
+    <node pkg="rebvo" type="run_node"    name="rebvo"    output="screen">
+         <param name="useInfraredVisualOdometry" type="bool" value="true"/>
+    </node>
+    <node name="rebvo_node" pkg="rebvo" type="rebvo" output="screen" >
+    <rosparam command="load" file="$(find rebvo)/cfg/rebvo_thermal.yaml"/>
+    <param name="rebvo/imu_topic" value="/imu0"/>
+    <param name="rebvo/image_topic" value="/camera/image_raw"/>
+    <param name="rebvo/frame_id" value="rebvo_frame"/>
+    </node>
+</launch>

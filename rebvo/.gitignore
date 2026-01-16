@@ -1,0 +1,44 @@
+# Misc files
+*.kf
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# QT
+*.gcda
+*.rpo
+/Release/
+
+*.catkin_workspace
+
+.idea/
+.vscode/
+build/
+ros/build/
+ros/devel/
